@@ -17,7 +17,8 @@ public static void main(String[] args) throws IOException {
 
             int c;
             while ((c = inputStream.read()) != -1) {
-                outputStream.write(c);
+                char maiuskula = (char)Character.toUpperCase(c);
+                outputStream.write(maiuskula);
             }
         } finally {
             if (inputStream != null) {
