@@ -19,7 +19,7 @@ public class MainMenua {
         do {
             System.out.println("MENDIEN MENUA");
             System.out.println("==================");
-            System.out.println("1. Mendien zerrenda ikusi (taula formatuan");
+            System.out.println("1. Mendien zerrenda ikusi (taula formatuan)");
             System.out.println("2. Mendirik altuena bistaratu");
             System.out.println("3. Mendiak esportatu (Araba.csv, Bizkaia.csv, Gipuzkoa.csv)");
             System.out.println("4. ...");
@@ -70,8 +70,31 @@ public class MainMenua {
     }
 
     public static void mendiAltuena() throws IOException {
-        
+        try {
+            inputStream = new BufferedReader(new FileReader(artxiboa));
+            int altuena = 0;
+            String mendia = "";
 
+            String l;
+            while ((l = inputStream.readLine()) != null) {
+                String[] arrOfStr = l.split(";");
+
+                try{
+                    if(Integer.parseInt(arrOfStr[1])>altuena){
+                    altuena = Integer.parseInt(arrOfStr[1]);
+                    mendia =arrOfStr[0];
+                    }
+                } catch (Exception e) {
+                    continue;
+                }
+            }
+            System.out.println("Mendirik altuena " + mendia + " da " + altuena + " metroko atuerarekin.");
+
+        } finally {
+            if (inputStream != null) {
+                inputStream.close();
+            }
+        }
     }
 
     public static void mendiakEsportatu() throws IOException {
