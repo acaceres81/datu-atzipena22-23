@@ -12,8 +12,7 @@ public class KarpetakSortu
      * @param args
      * @throws IOException
      */
-    public static void main( String[] args ) throws IOException
-    {
+    public static void main( String[] args ) throws IOException{
         Path karpetaBerria = Paths.get(("kareptaBerria"));
         try{
             // Karpeta ez bada existizten, sortu egiten du

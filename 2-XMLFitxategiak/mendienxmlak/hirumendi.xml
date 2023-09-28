@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mendiak>
+    <Mendia>
+        <Izena>Hernio</Izena>
+        <Altuera>1075</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Izena>Hernio</Izena>
+        <Altuera>1062</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Izena>Txamantxoia</Izena>
+        <Altuera>1945</Altuera>
+        <Probintzia>Nafarroa</Probintzia>
+    </Mendia>
+</Mendiak>
