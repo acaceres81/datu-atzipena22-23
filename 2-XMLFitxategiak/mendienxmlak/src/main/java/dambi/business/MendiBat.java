@@ -29,6 +29,11 @@ public class MendiBat {
     }
     
 
+    public MendiBat(String izena, int altuera, String probintzia) {
+        this.izena = izena;
+        this.probintzia = probintzia;
+        this.altuera = altuera;
+    }
     @XmlElement( name = "Izena")
     public void setIzena(String izena) {
         this.izena = izena;
