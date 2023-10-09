@@ -1,43 +1,41 @@
 package dambi;
 
-import javax.json.JsonValue;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import javax.json.Json;
 import javax.json.JsonObject;
-import javax.json.JsonArray;
-import javax.json.JsonNumber;
-import javax.json.JsonString;
+import javax.json.JsonWriter;
 
 
 public class JsonZuhaitzaSortuBi {
-    public static void navigateTree(JsonValue tree, String key) {
-        if (key != null)
-           System.out.print("Key " + key + ": ");
-        switch(tree.getValueType()) {
-           case OBJECT:
-              System.out.println("OBJECT");
-              JsonObject object = (JsonObject) tree;
-              for (String name : object.keySet())
-                 navigateTree(object.get(name), name);
-              break;
-           case ARRAY:
-              System.out.println("ARRAY");
-              JsonArray array = (JsonArray) tree;
-              for (JsonValue val : array)
-                 navigateTree(val, null);
-              break;
-           case STRING:
-              JsonString st = (JsonString) tree;
-              System.out.println("STRING " + st.getString());
-              break;
-           case NUMBER:
-              JsonNumber num = (JsonNumber) tree;
-              System.out.println("NUMBER " + num.toString());
-              break;
-           case TRUE:
-           case FALSE:
-           case NULL:
-              System.out.println(tree.getValueType().toString());
-              break;
-        }
-     }
-    
+      public static void main(String[] args) throws FileNotFoundException {
+         // Create a JSON object hierarchy using the Json.createObjectBuilder() method
+        JsonObject model = Json.createObjectBuilder()
+        .add("menu",Json.createObjectBuilder()
+            .add("id", "file")
+            .add("value", "file")
+            .add("popup", Json.createObjectBuilder()
+                .add("menuitem", Json.createArrayBuilder()
+                .add(Json.createObjectBuilder()
+                    .add("value", "new")
+                    .add("onclick", "CreateNewDoc()"))
+                .add(Json.createObjectBuilder()
+                    .add("value", "open")
+                    .add("onclick", "OpenDoc"))
+                .add(Json.createObjectBuilder()
+                    .add("value", "new")
+                    .add("onclick", "CreateNewDoc()"))))) 
+        .build();
+        // Print the JSON object to the console
+        System.out.println(model);
+       // Write the JSON object to a file named "Irteera.json"
+        try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("data/Irteera.json"))) {
+        
+            jsonWriter.writeObject(model); // model da JsonObjectaren izena
+         }
+
+    }
 }
+    
+
