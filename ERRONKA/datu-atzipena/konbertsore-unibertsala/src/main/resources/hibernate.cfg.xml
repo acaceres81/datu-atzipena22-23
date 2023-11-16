@@ -1,0 +1,23 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configura tu conexión a la base de datos -->
+        <property name="hibernate.connection.url">jdbc:postgresql://192.168.65.120:5432/icer</property>
+        <property name="hibernate.connection.username">odoo</property>
+        <property name="hibernate.connection.password">Admin123</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.transaction.jta.platform"/>
+
+        <!-- JDBC connection pool settings -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+        
+        <!-- Mapeo de clases de entidad -->
+        <mapping class="talde2.model.products.entities.Product"/>
+        <mapping class="talde2.model.products.entities.Stock"/>
+        <mapping class="talde2.model.employees.dbaccessemployees.Employee"/>
+        <mapping class="talde2.model.employees.dbaccessemployees.Department"/>
+    </session-factory>
+</hibernate-configuration>
