@@ -1,5 +1,5 @@
 package dambi.projoak;
 
-public class Menida {
+public class Mendia {
     private int id; 
 }

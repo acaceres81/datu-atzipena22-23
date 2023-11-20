@@ -1,0 +1,4 @@
+dambi/model/product/Product.class
+dambi/model/product/ProductAccess.class
+dambi/exec/Main.class
+dambi/HibernateUtil.class

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Notak>
+    <Nota id="1">
+        <data>2023-02-28</data>
+        <ikaslea>alberdi.jon</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="2">
+        <data>2023-02-28</data>
+        <ikaslea>alonso.aimar</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="3">
+        <data>2023-02-28</data>
+        <ikaslea>arruabarrena.aritz</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="4">
+        <data>2023-02-28</data>
+        <ikaslea>caceres.alberto</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="5">
+        <data>2023-02-28</data>
+        <ikaslea>calo.gerson</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="6">
+        <data>2023-02-28</data>
+        <ikaslea>delatorre.aiert</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="7">
+        <data>2023-02-28</data>
+        <ikaslea>ferrero.asier</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="8">
+        <data>2023-02-28</data>
+        <ikaslea>galindo.julen</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="9">
+        <data>2023-02-28</data>
+        <ikaslea>garcia.gorka</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="10">
+        <data>2023-02-28</data>
+        <ikaslea>herrero.julen</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="11">
+        <data>2023-02-28</data>
+        <ikaslea>maiora.arkaitz</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>6.0</nota>
+    </Nota>
+    <Nota id="12">
+        <data>2023-02-28</data>
+        <ikaslea>martiartu.markel</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="13">
+        <data>2023-02-28</data>
+        <ikaslea>nistal.iker</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="14">
+        <data>2023-02-28</data>
+        <ikaslea>pelaez.julen</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="15">
+        <data>2023-02-28</data>
+        <ikaslea>telleria.jon</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="16">
+        <data>2023-02-28</data>
+        <ikaslea>zelaia.unai</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="17">
+        <data>2023-06-05</data>
+        <ikaslea>alberdi.jon</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="18">
+        <data>2023-06-05</data>
+        <ikaslea>alonso.aimar</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="19">
+        <data>2023-06-05</data>
+        <ikaslea>arruabarrena.aritz</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="20">
+        <data>2023-06-05</data>
+        <ikaslea>caceres.alberto</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>6.0</nota>
+    </Nota>
+    <Nota id="21">
+        <data>2023-06-05</data>
+        <ikaslea>calo.gerson</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="22">
+        <data>2023-06-05</data>
+        <ikaslea>delatorre.aiert</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="23">
+        <data>2023-06-05</data>
+        <ikaslea>ferrero.asier</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="24">
+        <data>2023-06-05</data>
+        <ikaslea>galindo.julen</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="25">
+        <data>2023-06-05</data>
+        <ikaslea>garcia.gorka</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="26">
+        <data>2023-06-05</data>
+        <ikaslea>herrero.julen</ikaslea>
+        <ikasgaia>program</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="27">
+        <data>2023-06-05</data>
+        <ikaslea>maiora.arkaitz</ikaslea>
+        <ikasgaia>interfaze</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="28">
+        <data>2023-06-05</data>
+        <ikaslea>martiartu.markel</ikaslea>
+        <ikasgaia>interfaze</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="29">
+        <data>2023-06-05</data>
+        <ikaslea>nistal.iker</ikaslea>
+        <ikasgaia>interfaze</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="30">
+        <data>2023-06-05</data>
+        <ikaslea>pelaez.julen</ikaslea>
+        <ikasgaia>interfaze</ikasgaia>
+        <nota>6.0</nota>
+    </Nota>
+    <Nota id="31">
+        <data>2023-06-05</data>
+        <ikaslea>telleria.jon</ikaslea>
+        <ikasgaia>interfaze</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="32">
+        <data>2023-06-05</data>
+        <ikaslea>zelaia.unai</ikaslea>
+        <ikasgaia>interfaze</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="33">
+        <data>2023-10-19</data>
+        <ikaslea>alberdi.jon</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="34">
+        <data>2023-10-19</data>
+        <ikaslea>alonso.aimar</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="35">
+        <data>2023-10-19</data>
+        <ikaslea>arruabarrena.aritz</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="36">
+        <data>2023-10-19</data>
+        <ikaslea>caceres.alberto</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="37">
+        <data>2023-10-19</data>
+        <ikaslea>calo.gerson</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="38">
+        <data>2023-10-19</data>
+        <ikaslea>delatorre.aiert</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="39">
+        <data>2023-10-19</data>
+        <ikaslea>ferrero.asier</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="40">
+        <data>2023-10-19</data>
+        <ikaslea>galindo.julen</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>6.0</nota>
+    </Nota>
+    <Nota id="41">
+        <data>2023-10-19</data>
+        <ikaslea>garcia.gorka</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="42">
+        <data>2023-10-19</data>
+        <ikaslea>herrero.julen</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="43">
+        <data>2023-10-19</data>
+        <ikaslea>maiora.arkaitz</ikaslea>
+        <ikasgaia>multimedia</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="44">
+        <data>2023-10-20</data>
+        <ikaslea>martiartu.markel</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="45">
+        <data>2023-10-20</data>
+        <ikaslea>nistal.iker</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="46">
+        <data>2023-10-20</data>
+        <ikaslea>pelaez.julen</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="47">
+        <data>2023-10-20</data>
+        <ikaslea>telleria.jon</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="48">
+        <data>2023-10-20</data>
+        <ikaslea>zelaia.unai</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="49">
+        <data>2023-10-20</data>
+        <ikaslea>alberdi.jon</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="50">
+        <data>2023-10-20</data>
+        <ikaslea>alonso.aimar</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>6.0</nota>
+    </Nota>
+    <Nota id="51">
+        <data>2023-10-20</data>
+        <ikaslea>arruabarrena.aritz</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="52">
+        <data>2023-10-20</data>
+        <ikaslea>caceres.alberto</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="53">
+        <data>2023-10-20</data>
+        <ikaslea>calo.gerson</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="54">
+        <data>2023-10-20</data>
+        <ikaslea>delatorre.aiert</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="55">
+        <data>2023-10-20</data>
+        <ikaslea>ferrero.asier</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="56">
+        <data>2023-10-20</data>
+        <ikaslea>galindo.julen</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+    <Nota id="57">
+        <data>2023-10-20</data>
+        <ikaslea>garcia.gorka</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="58">
+        <data>2023-10-20</data>
+        <ikaslea>herrero.julen</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>8.0</nota>
+    </Nota>
+    <Nota id="59">
+        <data>2023-10-20</data>
+        <ikaslea>maiora.arkaitz</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>7.0</nota>
+    </Nota>
+    <Nota id="60">
+        <data>2023-10-20</data>
+        <ikaslea>martiartu.markel</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>6.5</nota>
+    </Nota>
+    <Nota id="61">
+        <data>2023-10-20</data>
+        <ikaslea>nistal.iker</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>7.6</nota>
+    </Nota>
+    <Nota id="62">
+        <data>2023-10-20</data>
+        <ikaslea>pelaez.julen</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>9.0</nota>
+    </Nota>
+    <Nota id="63">
+        <data>2023-10-20</data>
+        <ikaslea>telleria.jon</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>8.5</nota>
+    </Nota>
+    <Nota id="64">
+        <data>2023-10-20</data>
+        <ikaslea>zelaia.unai</ikaslea>
+        <ikasgaia>da</ikasgaia>
+        <nota>10.0</nota>
+    </Nota>
+</Notak>
