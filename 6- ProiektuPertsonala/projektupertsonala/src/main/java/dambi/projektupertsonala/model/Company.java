@@ -1,6 +1,5 @@
 package dambi.projektupertsonala.model;
 
-import javax.swing.plaf.synth.Region;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
@@ -10,13 +9,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Company {
 
     @Id
-    ObjectId _id;
     String id;
     int rank;
     String company;
+    String country;
     String region;
     String industry;
-    String sector;
     double rnd;
     double rndGrowth;
     double sales;
@@ -32,13 +30,8 @@ public class Company {
     double	employeesGrowth;
     double marketCap;
     double marketCapGrowth;
-    
-    public ObjectId get_id() {
-        return _id;
-    }
-    public void set_id(ObjectId _id) {
-        this._id = _id;
-    }
+
+
     public String getId() {
         return id;
     }
@@ -57,6 +50,12 @@ public class Company {
     public void setCompany(String company) {
         this.company = company;
     }
+    public String getCountry() {
+        return country;
+    }
+    public void setCountry(String country) {
+        this.country = country;
+    }
     public String getRegion() {
         return region;
     }
@@ -68,12 +67,6 @@ public class Company {
     }
     public void setIndustry(String industry) {
         this.industry = industry;
-    }
-    public String getSector() {
-        return sector;
-    }
-    public void setSector(String sector) {
-        this.sector = sector;
     }
     public double getRnd() {
         return rnd;
@@ -165,10 +158,6 @@ public class Company {
     public void setMarketCapGrowth(double marketCapGrowth) {
         this.marketCapGrowth = marketCapGrowth;
     }
-
-    
-
-    
 
     
     

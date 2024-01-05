@@ -58,7 +58,7 @@ public class CompanyService {
             existingCompany.setRndIntensity(updatedCompany.getRndIntensity());
             existingCompany.setSales(updatedCompany.getSales());
             existingCompany.setSalesGrowth(updatedCompany.getSalesGrowth());
-            existingCompany.setSector(updatedCompany.getSector());
+            existingCompany.setCountry(updatedCompany.getCountry());
 
 
             return companyRepository.save(existingCompany);
