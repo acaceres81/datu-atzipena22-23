@@ -1,13 +1,13 @@
-package com.Alberto.proiektuPertsonala;
+package dambi.accessingmongoumeak;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProiektuPertsonalaApplication {
+public class ProgramaNagusia {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProiektuPertsonalaApplication.class, args);
+		SpringApplication.run(ProgramaNagusia.class, args);
 	}
 
 }

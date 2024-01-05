@@ -1,10 +1,10 @@
-package com.Alberto.proiektuPertsonala;
+package dambi.projektupertsonala;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProiektuPertsonalaApplicationTests {
+class ProjektupertsonalaApplicationTests {
 
 	@Test
 	void contextLoads() {
