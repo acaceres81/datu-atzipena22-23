@@ -1,4 +1,4 @@
-rank;company;region;industry;sector;rnd;rndGrowth;sales;salesGrowth;rndIntensity;capex;capexGrowth;capexIntesity;opProfits;opProfitsGrowth;profitability;employees;employeesGrowth;marketCap;marketCapGrowth
+rank;company;country;region;industry;rnd;rndGrowth;sales;salesGrowth;rndIntensity;capex;capexGrowth;capexIntensity;opProfits;opProfitsGrouth;profitability;employees;employeesGrowth;marketCap;marketCapGrowth
 1;ALPHABET;US;US;Software & Computer Services;27866.8;14.5;227473.9;41.2;12.3;21755.2;10.6;9.6;69498.5;90.9;30.6;156500;15.7;769312.7;78
 2;META;US;US;Software & Computer Services;21768.5;33.7;104122.3;37.2;20.9;16393.2;22.8;15.7;41279.3;43.1;39.6;71970;22.8;798490.6;28.3
 3;MICROSOFT;US;US;Software & Computer Services;21642.2;18.3;175057.3;18;12.4;21089.5;15.8;12;73531.7;19.1;42;221000;22.1;2002997.3;32.9
