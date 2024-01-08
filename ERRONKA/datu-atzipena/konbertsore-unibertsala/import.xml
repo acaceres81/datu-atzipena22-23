@@ -1,0 +1,8 @@
+<Products>
+    <Product>
+        <deskripzioa>{"en_US": "&lt;p&gt;Restaurants, business lunches, etc.&lt;/p&gt;", "es_ES": "&lt;p&gt;Restaurantes, comidas de negocios, etc.&lt;/p&gt;"}</deskripzioa>
+        <id>54</id>
+        <izena>{"en_US": "Meals", "es_ES": "Comidas"}</izena>
+        <prezioa>1.0</prezioa>
+    </Product>
+</Products>

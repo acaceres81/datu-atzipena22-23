@@ -3,7 +3,7 @@ package dambi.business;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 
 @XmlType( propOrder = { "izena", "altuera", "probintzia" } )
 @XmlRootElement( name = "Mendia" )
