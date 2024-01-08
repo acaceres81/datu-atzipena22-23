@@ -49,6 +49,7 @@ public class CompanyService {
         return companyRepository.findByDataRnd(rnd);
     }
 
+  
     public Company updateCompany(String id, Company updatedCompany){
         Optional<Company> companyOptional = companyRepository.findById(id);
 
