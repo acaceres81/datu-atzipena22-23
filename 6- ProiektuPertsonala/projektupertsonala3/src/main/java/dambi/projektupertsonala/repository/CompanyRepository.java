@@ -12,4 +12,6 @@ public interface CompanyRepository extends MongoRepository<Company, String> {
     List<Company> findByDataRndGreaterThan(double value);
     List<Company> findByCountryEquals(String countryValue);
     List<Company> findByDataRnd(double rnd);
+
+    
 }
