@@ -34,7 +34,7 @@ public class MendiakCSVtikSortu {
                 // skip the first line because it´s the header.
                 if (arrOfStr[0].equals("MENDIA")) {
                     continue;
-                    // create a mendia for each line
+                    
                 } else {
                     MendiBat mendia = new MendiBat(arrOfStr[0], Integer.parseInt(arrOfStr[1]), arrOfStr[2]);
                     // Add Mendia to Mendiak object
