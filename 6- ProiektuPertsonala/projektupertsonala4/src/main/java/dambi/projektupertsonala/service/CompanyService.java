@@ -65,7 +65,7 @@ public class CompanyService {
             existingCompany.getData().setMarketCap(updatedCompany.getData().getMarketCap());
             existingCompany.getData().setMarketCapGrowth(updatedCompany.getData().getMarketCapGrowth());
             existingCompany.getData().setOpProfits(updatedCompany.getData().getOpProfits());
-            existingCompany.getData().setOpProfitsGrouth(updatedCompany.getData().getOpProfitsGrouth());
+            existingCompany.getData().setOpProfitsGrowth(updatedCompany.getData().getOpProfitsGrowth());
             existingCompany.getData().setProfitability(updatedCompany.getData().getProfitability());
             existingCompany.setRegion(updatedCompany.getRegion());
             existingCompany.setRank(updatedCompany.getRank());

@@ -1,111 +1,214 @@
 package dambi.projektupertsonala.model;
 
 public class Data {
-    double rnd;
-    double rndGrowth;
-    double sales;
-    double salesGrowth;
-    double rndIntensity;
-    double capex;
-    double capexGrowth;
-    double capexIntensity;
-    double opProfits;
-    double opProfitsGrouth;
-    double profitability;
-    int employees;
-    double	employeesGrowth;
-    double marketCap;
-    double marketCapGrowth;
+    // Double primitiboak erabitzen ditut double erabili beharrean csv fitxategiak balio hutsak dituelako,
+    // double erabili ezkero, jsonera konbertsioa egiterakoan 0.0 balio ematen du null balioa eman beharrena.
+    Double rnd;
+    Double rndGrowth;
+    Double sales;
+    Double salesGrowth;
+    Double rndIntensity;
+    Double capex;
+    Double capexGrowth;
+    Double capexIntensity;
+    Double opProfits;
+    Double opProfitsGrowth; // Changed variable name to match methods
+    Double profitability;
+    Integer employees; // Using Integer wrapper class for employees
+    Double employeesGrowth;
+    Double marketCap;
+    Double marketCapGrowth;
     
-    public double getRnd() {
+   
+
+    public Double getRnd() {
         return rnd;
     }
-    public void setRnd(double rnd) {
+
+
+
+    public void setRnd(Double rnd) {
         this.rnd = rnd;
     }
-    public double getRndGrowth() {
+
+
+
+    public Double getRndGrowth() {
         return rndGrowth;
     }
-    public void setRndGrowth(double rndGrowth) {
+
+
+
+    public void setRndGrowth(Double rndGrowth) {
         this.rndGrowth = rndGrowth;
     }
-    public double getSales() {
+
+
+
+    public Double getSales() {
         return sales;
     }
-    public void setSales(double sales) {
+
+
+
+    public void setSales(Double sales) {
         this.sales = sales;
     }
-    public double getSalesGrowth() {
+
+
+
+    public Double getSalesGrowth() {
         return salesGrowth;
     }
-    public void setSalesGrowth(double salesGrowth) {
+
+
+
+    public void setSalesGrowth(Double salesGrowth) {
         this.salesGrowth = salesGrowth;
     }
-    public double getRndIntensity() {
+
+
+
+    public Double getRndIntensity() {
         return rndIntensity;
     }
-    public void setRndIntensity(double rndIntensity) {
+
+
+
+    public void setRndIntensity(Double rndIntensity) {
         this.rndIntensity = rndIntensity;
     }
-    public double getCapex() {
+
+
+
+    public Double getCapex() {
         return capex;
     }
-    public void setCapex(double capex) {
+
+
+
+    public void setCapex(Double capex) {
         this.capex = capex;
     }
-    public double getCapexGrowth() {
+
+
+
+    public Double getCapexGrowth() {
         return capexGrowth;
     }
-    public void setCapexGrowth(double capexGrowth) {
+
+
+
+    public void setCapexGrowth(Double capexGrowth) {
         this.capexGrowth = capexGrowth;
     }
-    public double getCapexIntensity() {
+
+
+
+    public Double getCapexIntensity() {
         return capexIntensity;
     }
-    public void setCapexIntensity(double capexIntensity) {
+
+
+
+    public void setCapexIntensity(Double capexIntensity) {
         this.capexIntensity = capexIntensity;
     }
-    public double getOpProfits() {
+
+
+
+    public Double getOpProfits() {
         return opProfits;
     }
-    public void setOpProfits(double opProfits) {
+
+
+
+    public void setOpProfits(Double opProfits) {
         this.opProfits = opProfits;
     }
-    public double getOpProfitsGrouth() {
-        return opProfitsGrouth;
+
+
+
+    public Double getOpProfitsGrowth() {
+        return opProfitsGrowth;
     }
-    public void setOpProfitsGrouth(double opProfitsGrouth) {
-        this.opProfitsGrouth = opProfitsGrouth;
+
+
+
+    public void setOpProfitsGrowth(Double opProfitsGrowth) {
+        this.opProfitsGrowth = opProfitsGrowth;
     }
-    public double getProfitability() {
+
+
+
+    public Double getProfitability() {
         return profitability;
     }
-    public void setProfitability(double profitability) {
+
+
+
+    public void setProfitability(Double profitability) {
         this.profitability = profitability;
     }
-    public int getEmployees() {
+
+
+
+    public Integer getEmployees() {
         return employees;
     }
-    public void setEmployees(int employees) {
+
+
+
+    public void setEmployees(Integer employees) {
         this.employees = employees;
     }
-    public double getEmployeesGrowth() {
+
+
+
+    public Double getEmployeesGrowth() {
         return employeesGrowth;
     }
-    public void setEmployeesGrowth(double employeesGrowth) {
+
+
+
+    public void setEmployeesGrowth(Double employeesGrowth) {
         this.employeesGrowth = employeesGrowth;
     }
-    public double getMarketCap() {
+
+
+
+    public Double getMarketCap() {
         return marketCap;
     }
-    public void setMarketCap(double marketCap) {
+
+
+
+    public void setMarketCap(Double marketCap) {
         this.marketCap = marketCap;
     }
-    public double getMarketCapGrowth() {
+
+
+
+    public Double getMarketCapGrowth() {
         return marketCapGrowth;
     }
-    public void setMarketCapGrowth(double marketCapGrowth) {
+
+
+
+    public void setMarketCapGrowth(Double marketCapGrowth) {
         this.marketCapGrowth = marketCapGrowth;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "Data [rnd=" + rnd + ", rndGrowth=" + rndGrowth + ", sales=" + sales + ", salesGrowth=" + salesGrowth
+                + ", rndIntensity=" + rndIntensity + ", capex=" + capex + ", capexGrowth=" + capexGrowth
+                + ", capexIntensity=" + capexIntensity + ", opProfits=" + opProfits + ", opProfitsGrouth="
+                + opProfitsGrowth + ", profitability=" + profitability + ", employees=" + employees
+                + ", employeesGrowth=" + employeesGrowth + ", marketCap=" + marketCap + ", marketCapGrowth="
+                + marketCapGrowth + "]";
     }
 
     

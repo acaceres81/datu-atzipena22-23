@@ -29,67 +29,75 @@ public class CsvToJson {
             String[] line;
             while ((line = reader.readNext()) != null) {
                 Company companyData = new Company();
-                String[] values = line[0].split(";"); // Split the line into individual values
+                // lerro bakoitza banatzen da ; dagoenean. -1 ipintzen da balio hutsak kontutan har ditzan.
+                String[] values = line[0].split(";", -1); 
                 if(values.length<20){
-                    System.out.println("Cantidad de valores encontrados en la línea: " + values.length + " " + values[0]);
-                }
-                 
-                //companyData.setId("ID_" + values[0]); // Assuming 'rank' is the ID
+                    
+                }else{
+                
+                companyData.setId("ID_" + values[0]); 
                 companyData.setRank(Integer.parseInt(values[0]));
                 companyData.setCompany(values[1]);
                 companyData.setCountry(values[2]);
                 companyData.setRegion(values[3]);
                 companyData.setIndustry(values[4]);
 
-                Data data = new Data();if 
-                (!values[5].equals(" ")) {
-                    data.setRnd(Double.parseDouble(values[5]));
+                Data data = new Data();
+                if (!values[5].isEmpty()) {
+                data.setRnd(Double.parseDouble(values[5]));
                 }
-                if (!values[6].equals(" ")) {
-                    data.setRndGrowth(Double.parseDouble(values[6]));
+                if (!values[6].isEmpty()) {
+                data.setRndGrowth(Double.parseDouble(values[6]));
                 }
-                if (!values[7].equals(" ")) {
-                    data.setSales(Double.parseDouble(values[7]));
+                if (!values[7].isEmpty()) {
+                data.setSales(Double.parseDouble(values[7]));
                 }
-                if (!values[8].equals(" ")) {
-                data.setSalesGrowth(Double.parseDouble(values[8]));
+                if (!values[8].isEmpty()) {
+                    data.setSalesGrowth(Double.parseDouble(values[8]));
                 }
-                if (!values[9].equals(" ")) {
-                    data.setRndIntensity(Double.parseDouble(values[9]));
-                }
-                if (!values[10].equals(" ")) {
+                if (!values[9].isEmpty()) {
+                data.setRndIntensity(Double.parseDouble(values[9]));
+                }// hemendik aurrera daudenak balio hutsak izan ditzakete.
+                if (!values[10].isEmpty()) {
                     data.setCapex(Double.parseDouble(values[10]));
                 }
-                if (!values[11].equals(" ")) {
+                if (!values[11].isEmpty()) {
                 data.setCapexGrowth(Double.parseDouble(values[11]));
                 }
-                if (!values[12].equals(" ")){
+                if (!values[12].isEmpty()){
                     data.setCapexIntensity(Double.parseDouble(values[12]));
                 }
-                if (!values[13].equals(" ")) {
+                if (!values[13].isEmpty()) {
                     data.setOpProfits(Double.parseDouble(values[13]));
                 }
-                if (!values[14].equals(" ")) {
-                    data.setOpProfitsGrouth(Double.parseDouble(values[14]));
+                if (!values[14].isEmpty()) {
+                    data.setOpProfitsGrowth(Double.parseDouble(values[14]));
                 }
-                if (!values[15].equals(" ")) {
+                if (!values[15].isEmpty()) {
                     data.setProfitability(Double.parseDouble(values[15]));
                 }
-                if (!values[16].equals(" ")) {
+                if (!values[16].isEmpty()) {
                     data.setEmployees(Integer.parseInt(values[16]));
                 }
-                if (!values[17].equals(" ")) {
+                if (!values[17].isEmpty()) {
                     data.setEmployeesGrowth(Double.parseDouble(values[17]));
                 }
-                if (!values[18].equals(" ")) { 
+                if (!values[18].isEmpty()) { 
                     data.setMarketCap(Double.parseDouble(values[18]));
                 }
-                if (!values[19].equals(" ")) {
+                if (!values[19].isEmpty()) {
                     data.setMarketCapGrowth(Double.parseDouble(values[19]));
                 }
+                
                 companyData.setData(data);
                 companyDataList.add(companyData);
+
+                
+                }
             }
+            Company priCompany = companyDataList.get(26);
+            
+            System.out.println(priCompany.toString());
 
             ObjectMapper mapper = new ObjectMapper();
             mapper.writerWithDefaultPrettyPrinter().writeValue(new FileWriter(jsonFile), companyDataList);

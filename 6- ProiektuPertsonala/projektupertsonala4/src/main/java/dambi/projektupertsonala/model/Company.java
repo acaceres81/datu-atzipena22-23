@@ -58,6 +58,12 @@ public class Company {
     public void setData(Data data) {
         this.data = data;
     }
+    
+    @Override
+    public String toString() {
+        return "Company [id=" + id + ", rank=" + rank + ", company=" + company + ", country=" + country + ", region="
+                + region + ", industry=" + industry + ", data=" + data + "]";
+    }
 
 
     
