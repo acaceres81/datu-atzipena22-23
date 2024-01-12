@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProjektupertsonalaApplication {
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(ProjektupertsonalaApplication.class, args);
 	}
 

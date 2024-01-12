@@ -1,5 +1,5 @@
 [ {
-  "_Id" : null,
+  "_Id" : "SECTOR_2184",
   "sector" : "Mobile Telecommunications",
   "companyList" : [ {
     "rank" : 197,
@@ -325,7 +325,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_1999",
   "sector" : "Oil Equipment and Services & Distribution",
   "companyList" : [ {
     "rank" : 369,
@@ -467,7 +467,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_1728",
   "sector" : "Fixed Line Telecommunications",
   "companyList" : [ {
     "rank" : 31,
@@ -816,7 +816,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2455",
   "sector" : "Health Care Equipment & Services",
   "companyList" : [ {
     "rank" : 73,
@@ -2867,7 +2867,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2247",
   "sector" : "Aerospace & Defence",
   "companyList" : [ {
     "rank" : 60,
@@ -3883,7 +3883,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2214",
   "sector" : "Mining",
   "companyList" : [ {
     "rank" : 386,
@@ -4209,7 +4209,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2491",
   "sector" : "General Retailers",
   "companyList" : [ {
     "rank" : 82,
@@ -4995,7 +4995,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2332",
   "sector" : "Electricity",
   "companyList" : [ {
     "rank" : 274,
@@ -5643,7 +5643,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2481",
   "sector" : "Software & Computer Services",
   "companyList" : [ {
     "rank" : 1,
@@ -13375,7 +13375,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2407",
   "sector" : "Nonlife Insurance",
   "companyList" : [ {
     "rank" : 1291,
@@ -13494,7 +13494,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2488",
   "sector" : "Banks",
   "companyList" : [ {
     "rank" : 93,
@@ -13981,7 +13981,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2303",
   "sector" : "Real Estate Investment & Services",
   "companyList" : [ {
     "rank" : 366,
@@ -14353,7 +14353,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2290",
   "sector" : "Oil & Gas Producers",
   "companyList" : [ {
     "rank" : 92,
@@ -14932,7 +14932,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2415",
   "sector" : "Travel & Leisure",
   "companyList" : [ {
     "rank" : 152,
@@ -15442,7 +15442,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2452",
   "sector" : "Industrial Metals & Mining",
   "companyList" : [ {
     "rank" : 131,
@@ -16688,7 +16688,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2444",
   "sector" : "Beverages",
   "companyList" : [ {
     "rank" : 245,
@@ -16876,7 +16876,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2469",
   "sector" : "Food Producers",
   "companyList" : [ {
     "rank" : 101,
@@ -17915,7 +17915,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2495",
   "sector" : "Industrial Engineering",
   "companyList" : [ {
     "rank" : 104,
@@ -21760,7 +21760,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2499",
   "sector" : "Technology Hardware & Equipment",
   "companyList" : [ {
     "rank" : 4,
@@ -26525,7 +26525,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2369",
   "sector" : "Gas and Water & Multiutilities",
   "companyList" : [ {
     "rank" : 879,
@@ -26828,7 +26828,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2472",
   "sector" : "Financial Services",
   "companyList" : [ {
     "rank" : 102,
@@ -27177,7 +27177,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2139",
   "sector" : "Life Insurance",
   "companyList" : [ {
     "rank" : 1668,
@@ -27227,7 +27227,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2492",
   "sector" : "Pharmaceuticals & Biotechnology",
   "companyList" : [ {
     "rank" : 9,
@@ -38225,7 +38225,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2496",
   "sector" : "Media",
   "companyList" : [ {
     "rank" : 94,
@@ -38781,7 +38781,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2497",
   "sector" : "Chemicals",
   "companyList" : [ {
     "rank" : 83,
@@ -41430,7 +41430,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2389",
   "sector" : "Forestry & Paper",
   "companyList" : [ {
     "rank" : 827,
@@ -41664,7 +41664,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2500",
   "sector" : "Automobiles & Parts",
   "companyList" : [ {
     "rank" : 7,
@@ -45072,7 +45072,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_1782",
   "sector" : "0",
   "companyList" : [ {
     "rank" : 767,
@@ -45122,7 +45122,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_1174",
   "sector" : "Tobacco",
   "companyList" : [ {
     "rank" : 359,
@@ -45218,7 +45218,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2494",
   "sector" : "Electronic & Electrical Equipment",
   "companyList" : [ {
     "rank" : 6,
@@ -50949,7 +50949,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2446",
   "sector" : "Construction & Materials",
   "companyList" : [ {
     "rank" : 34,
@@ -52448,7 +52448,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2485",
   "sector" : "Personal Goods",
   "companyList" : [ {
     "rank" : 193,
@@ -53326,7 +53326,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2461",
   "sector" : "General Industrials",
   "companyList" : [ {
     "rank" : 88,
@@ -54802,7 +54802,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2498",
   "sector" : "Household Goods & Home Construction",
   "companyList" : [ {
     "rank" : 107,
@@ -55657,7 +55657,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2166",
   "sector" : "Alternative Energy",
   "companyList" : [ {
     "rank" : 141,
@@ -55845,7 +55845,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2372",
   "sector" : "Food & Drug Retailers",
   "companyList" : [ {
     "rank" : 490,
@@ -55941,7 +55941,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2346",
   "sector" : "Leisure Goods",
   "companyList" : [ {
     "rank" : 39,
@@ -56796,7 +56796,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2380",
   "sector" : "Industrial Transportation",
   "companyList" : [ {
     "rank" : 235,
@@ -56961,7 +56961,7 @@
     }
   } ]
 }, {
-  "_Id" : null,
+  "_Id" : "SECTOR_2427",
   "sector" : "Support Services",
   "companyList" : [ {
     "rank" : 200,

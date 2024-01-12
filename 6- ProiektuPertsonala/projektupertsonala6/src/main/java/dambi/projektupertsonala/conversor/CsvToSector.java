@@ -26,18 +26,22 @@ public class CsvToSector {
         Map<String, Sector> sectorMap = new HashMap<>();
 
         try (CSVReader reader = new CSVReader(new FileReader(csvFilePath))) {
-            String[] headers = reader.readNext(); // Assuming the first line contains headers
+            String[] headers = reader.readNext(); // lehen lerroa ez du hartzen goiburua delako
 
             String[] line;
             while ((line = reader.readNext()) != null) {
                 String[] values = line[0].split(";", -1); 
-                String sectorName = values[4]; // Assuming the 5th column contains the sector name
+                String sectorName = values[4]; 
 
-                // Create or retrieve the sector from the map
+                /*hemen map interfazea erabiltzen dugu sektorea existitzen bada sortzen ditugun objetu berriak
+                * sektore horretan sartzeko eta sektorea ez bada existitzen, sektore berri bat sortzeko.
+                */
                 Sector sector = sectorMap.getOrDefault(sectorName, new Sector());
+                sector.set_Id(generateUniqueId());
                 sector.setSector(sectorName);
 
-                // Create Company object and populate its fields from CSV
+
+                // CSV fitxategitik Compnay Objetua sortu
                 Company company = new Company();
                 
                 company.setRank(Integer.parseInt(values[0]));
@@ -46,7 +50,9 @@ public class CsvToSector {
                 company.setRegion(values[3]);
                 company.setIndustry(values[4]);
 
+                // CSV fitxategitik Data Objetua sortu
                 Data data = new Data();
+                // Balio hutsak ez badira, csvko datua hartu. ez badago daturik null agertuko da.
                 if (!values[5].isEmpty()) {
                 data.setRnd(Double.parseDouble(values[5]));
                 }
@@ -61,7 +67,7 @@ public class CsvToSector {
                 }
                 if (!values[9].isEmpty()) {
                 data.setRndIntensity(Double.parseDouble(values[9]));
-                }// hemendik aurrera daudenak balio hutsak izan ditzakete.
+                }
                 if (!values[10].isEmpty()) {
                     data.setCapex(Double.parseDouble(values[10]));
                 }
@@ -93,17 +99,17 @@ public class CsvToSector {
                     data.setMarketCapGrowth(Double.parseDouble(values[19]));
                 }
 
-                //add the data to the company
+                //company objeturai data gehitu
                 company.setData(data);
 
-                // Add the company to the sector's companyList
+                // sektoreari gehitu company objetua
                 sector.getCompanyList().add(company);
 
-                // Update the sector in the map
+                // mapan sektorea eguneratu
                 sectorMap.put(sectorName, sector);
             }
 
-            // Convert sector map to list before writing to JSON
+            // mapa lista batera pasatu JSONean idatzi aurretik.
             List<Sector> sectors = new ArrayList<>(sectorMap.values());
             writeToJson(sectors, jsonFilePath);
 
@@ -123,9 +129,8 @@ public class CsvToSector {
         }
     }
 
-    // Method to generate unique IDs using UUID
+    // Ida eman sektore bakoitzari
     private static String generateUniqueId() {
-        return "SECTOR_" + idCounter++; // Using a simple counter in this example
-        // For UUID: return UUID.randomUUID().toString();
+        return "SECTOR_" + idCounter++; 
     }
 }

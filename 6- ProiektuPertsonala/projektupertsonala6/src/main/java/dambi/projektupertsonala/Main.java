@@ -43,8 +43,6 @@ public class Main {
     }
 
     private static void runSpringBootApplication() {
-        System.out.println("Running Spring Boot Application...");
-
         SpringApplication.run(ProjektupertsonalaApplication.class);
     }
 

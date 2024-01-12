@@ -14,8 +14,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import dambi.projektupertsonala.model.Company;
+import dambi.projektupertsonala.model.Data;
 import dambi.projektupertsonala.model.Sector;
 import dambi.projektupertsonala.service.SectorService;
+
+/*
+* Kontrolatzaile honek sektoreekin eta enpresekin lotutako eskaerak kudeatzen ditu.
+* Endpointak ematen ditu sektoreei eta enpresei buruzko informazioa berreskuratzeko eta hainbat eragiketa egiteko ere.
+*/
 
 @RestController
 @RequestMapping("api/sectors")
@@ -38,7 +44,7 @@ public class SectorController {
     }
 
     // Sektore bat erakutsiko digu metodo honek
-    @GetMapping("/sector/{sector}")
+    @GetMapping("/{sector}")
     public Sector getSectorbySector(@PathVariable String sector) {
         return sectorService.getSectorBySector(sector);
     }
@@ -80,12 +86,12 @@ public class SectorController {
     }
 
     // erabiltzaileak sartutatko R&Da baino R&D handiagoa duten enpresak
-    @GetMapping("/companiesByRnD/{rnd}")
+    @GetMapping("/companiesWithRnDHigherThan/{rnd}")
     public List<Company> getCompaniesByRnd(@PathVariable double rnd) {
         return sectorService.findRndDGreaterThan(rnd);
     }
 
-    // Enpresa gehien dituen sektorea
+    // Enpresa gehien dituen sektorea ematen digu
     @GetMapping("/sectorWithMostCompanies")
     public String getSectorWithMostCompanies() {
         Sector sector = sectorService.getSectorWithMostCompanies();
@@ -93,11 +99,19 @@ public class SectorController {
         return sector.getSector() + " - " + sector.getCompanyList().size();
     }
 
+    // Sektore baten dauden enpresa kopurua ematen digu.
     @GetMapping("/numberCompaniesSector/{sector}")
     public int getCompaniesPerSector(@PathVariable String sector) {
         Sector sectorObject = sectorService.getSectorBySector(sector);
             
         return sectorObject.getCompanyList().size();
+    }
+
+    // Sectore bateko batazbesteko DATA ematen digu.
+    // Urteko igoerak, intentsitatea eta profitabilityak kalkulatzeak ez du zentzurik, beraz null bezala agertuko da.
+    @GetMapping("/averageDataBySector/{sector}")
+    public Data getAverageDataSector(@PathVariable String sector) {
+        return sectorService.getAverageDataSector(sector);
     }
 
 }

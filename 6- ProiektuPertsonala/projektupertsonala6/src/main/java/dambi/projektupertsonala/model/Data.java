@@ -12,9 +12,9 @@ public class Data {
     Double capexGrowth;
     Double capexIntensity;
     Double opProfits;
-    Double opProfitsGrowth; // Changed variable name to match methods
+    Double opProfitsGrowth;
     Double profitability;
-    Integer employees; // Using Integer wrapper class for employees
+    Integer employees;
     Double employeesGrowth;
     Double marketCap;
     Double marketCapGrowth;
