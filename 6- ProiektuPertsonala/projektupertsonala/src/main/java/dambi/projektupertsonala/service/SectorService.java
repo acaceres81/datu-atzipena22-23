@@ -16,7 +16,7 @@ import dambi.projektupertsonala.repository.SectorRepository;
 
 /*
 * Zerbitzu honek logika ematen du sektoreak eta enpresak kudeatzeko.
-* SektoreRepository-arekin elkarreragiten du, eta hainbat eragiketa egiten ditu, hala nola berreskurapena,
+* Sector Repository-arekin elkarreragiten du, eta hainbat eragiketa egiten ditu, adibidez datuak erakutsi,
 * sektoreak eta enpresak sortzea, eguneratzea eta ezabatzea.
 */
 
@@ -30,6 +30,7 @@ public class SectorService {
         return sectorRepository.findAll();
     }
 
+    // MongoDB atlasen dokumentuei ematen dien IDa erabilitza topatzen ditu enpresak.
     public Sector getSectorById(String id) {
         Optional<Sector> sector = sectorRepository.findById(id);
 
@@ -40,7 +41,9 @@ public class SectorService {
         }
     }
 
-    public Sector creaSector(Sector sector) {
+    // Enpresa berri bat sortuko du. Sektorea berria bada sektorea sortuko du.
+    // Sektorea exisittzen bada, existitzen den sektorean sartuko du enpresa berria.
+    public Sector createCompany(Sector sector) {
         Optional<Sector> existingSector = sectorRepository.findBySector(sector.getSector());
 
         if (existingSector.isPresent()) {
@@ -55,7 +58,7 @@ public class SectorService {
         }
     }
 
-    public Sector getSectorBySector(String sector) {
+    public Sector getSectorByName(String sector) {
         Optional<Sector> foundSector = sectorRepository.findBySector(sector);
 
         if (foundSector.isPresent()) {
@@ -65,18 +68,19 @@ public class SectorService {
         }
     }
 
+    // enpresa bat ezabatzen, horetarako enpresa sektoreetan bilatzen du eta topatzen duenean ezabatu egiten du
     public void deleteCompanyFromSector(String companyName) {
         List<Sector> sectors = sectorRepository.findAll();
-
-        for (int sectorIndex = 0; sectorIndex < sectors.size(); sectorIndex++) {
-            Sector sector = sectors.get(sectorIndex);
+        
+        for (int i = 0; i < sectors.size(); i++) {
+            Sector sector = sectors.get(i);
             List<Company> companyList = sector.getCompanyList();
 
-            for (int companyIndex = 0; companyIndex < companyList.size(); companyIndex++) {
-                Company company = companyList.get(companyIndex);
-
+            for (int j = 0; j < companyList.size(); j++) {
+                Company company = companyList.get(j);
+                
                 if (company.getCompany().equals(companyName)) {
-                    companyList.remove(companyIndex);
+                    companyList.remove(j);
                     sectorRepository.save(sector);
                     return;
                 }
@@ -85,22 +89,26 @@ public class SectorService {
 
     }
 
+    // Dokumentu guztiak ezabatzen ditu
     public void deleteAll() {
 
         sectorRepository.deleteAll();
 
     }
 
+
     public void updateSectorName(String oldName, String newName) {
         Optional<Sector> optionalSector = sectorRepository.findBySector(oldName);
 
         if (optionalSector.isPresent()) {
             Sector sector = optionalSector.get();
-            // Aldatu sektorearen izena sektore horatko enpresa bakoitzari
+            //  sektore horatko enpresa bakoitzari industry-aren izena aldatu sektorearekin bat etor dadin.
             for (int i = 0; i < sector.getCompanyList().size(); i++) {
                 sector.getCompanyList().get(i).setIndustry(newName);
             }
+            // sektoreari izena aldatu
             sector.setSector(newName);
+            // sektorea eguneratu errepositorioan
             sectorRepository.save(sector);
 
         } else {
@@ -108,20 +116,26 @@ public class SectorService {
         }
     }
 
+    // Enpresa guztiak erakutsi rakingaren arabera ordenatuz
     public List<Company> getAllCompanies() {
         List<Sector> sectors = sectorRepository.findAll();
         List<Company> allCompanies = new ArrayList<>();
 
         // Sektore guztietako enpresak lista baten sartu
-        for (Sector sector : sectors) {
-            allCompanies.addAll(sector.getCompanyList());
+        for (int i = 0; i < sectors.size(); i++) {
+            List<Company> companies = sectors.get(i).getCompanyList(); 
+            for (int j = 0; j < companies.size(); j++) {
+                allCompanies.add(companies.get(j));
+            }
         }
 
+        // Lista rankinaren arabera ordenatu.
         orderCompanies(allCompanies);
 
         return allCompanies;
     }
 
+    // Herrialde bateko enpresa guztiak erakutsi rakingaren arabera ordenatuz.
     public List<Company> findCompaniesByCountry(String country) {
         List<Sector> sectors = sectorRepository.findAll();
         List<Company> companiesByCountry = new ArrayList<>();
@@ -140,6 +154,7 @@ public class SectorService {
 
     }
 
+    //I+G erabiltzaileak esandako I+G baino hanfiagoa duten enpresak erakusten ditu.
     public List<Company> findRndDGreaterThan(double rnd) {
         List<Sector> sectors = sectorRepository.findAll();
         List<Company> companiesRnd = new ArrayList<>();
@@ -171,6 +186,71 @@ public class SectorService {
         return sector;
     }
 
+    public Data getAverageDataSector(String sectorName) {
+        Optional<Sector> optionalSector = sectorRepository.findBySector(sectorName);
+
+        if (optionalSector.isPresent()) {
+            Sector sector = optionalSector.get();
+            List<Company> companies = sector.getCompanyList();
+            Data averageData = new Data();
+
+            int companyCount = companies.size();
+            if (companyCount > 0) {
+                for (int i = 0; i < companyCount; i++) {
+                    Data data = companies.get(i).getData();
+
+                    // enpresa bakoitzeko atributu bakoitzaren batura kalkulatu.
+                    // Urteko igoerak, intentsitatea eta profitabilityak kalkulatzeak ez du
+                    // zentzurik, beraz null bezala agertuko da.
+                    if (data != null) {
+                        averageData.setRnd(getValueOrDefault(averageData.getRnd()) + getValueOrDefault(data.getRnd()));
+                        averageData.setSales(
+                                getValueOrDefault(averageData.getSales()) + getValueOrDefault(data.getSales()));
+                        averageData.setCapex(
+                                getValueOrDefault(averageData.getCapex()) + getValueOrDefault(data.getCapex()));
+                        averageData.setOpProfits(
+                                getValueOrDefault(averageData.getOpProfits()) + getValueOrDefault(data.getOpProfits()));
+                        averageData.setEmployees(
+                                getValueOrDefault(averageData.getEmployees()) + getValueOrDefault(data.getEmployees()));
+                        averageData.setMarketCap(
+                                getValueOrDefault(averageData.getMarketCap()) + getValueOrDefault(data.getMarketCap()));
+
+                    }
+                }
+
+                // Batazbestekoak kalkulatu
+                averageData.setRnd(averageData.getRnd() / companyCount);
+                averageData.setSales(averageData.getSales() / companyCount);
+                averageData.setCapex(averageData.getCapex() / companyCount);
+                averageData.setOpProfits(averageData.getOpProfits() / companyCount);
+                averageData.setEmployees(averageData.getEmployees() / companyCount);
+                averageData.setMarketCap(averageData.getMarketCap() / companyCount);
+                averageData.setCapexIntensity(averageData.getCapex() / averageData.getSales() * 100);
+                averageData.setRndIntensity(averageData.getRnd() / averageData.getSales() * 100);
+                averageData.setProfitability(averageData.getOpProfits() / averageData.getSales() * 100);
+
+
+                return averageData;
+
+                // sektorean ez badago enpresarik guztia 0 izango da.
+            } else {
+                averageData.setRnd(0.0);
+                averageData.setSales(0.0);
+                averageData.setCapex(0.0);
+                averageData.setOpProfits(0.0);
+                averageData.setEmployees(0);
+                averageData.setMarketCap(0.0);
+                averageData.setCapexIntensity(0.0);
+                averageData.setRndIntensity(0.0);
+
+                return averageData;
+
+            }
+        } else {
+            throw new NoSuchElementException(sectorName + " sektorea ez da existitzen.");
+        }
+    }
+
     // Enpresak rankinaren arabera ordenatu
     public List<Company> orderCompanies(List<Company> companies) {
         for (int i = 0; i < companies.size() - 1; i++) {
@@ -185,66 +265,15 @@ public class SectorService {
         return companies;
     }
 
-    public Data getAverageDataSector(String sectorName) {
-        Optional<Sector> optionalSector = sectorRepository.findBySector(sectorName);
-
-        if (optionalSector.isPresent()) {
-            Sector sector = optionalSector.get();
-            List<Company> companies = sector.getCompanyList();
-            Data averageData = new Data();
-
-            int companyCount = companies.size();
-            if (companyCount > 0) {
-                for(int i =0; i<companyCount;i++){
-                    Data data = companies.get(i).getData();
-
-                    // enpresa bakoitzeko atributu bakoitzaren batura kalkulatu. 
-                    //Urteko igoerak, intentsitatea eta profitabilityak kalkulatzeak ez du zentzurik, beraz null bezala agertuko da.
-                    if (data != null) {
-                        averageData.setRnd(getValueOrDefault(averageData.getRnd()) + getValueOrDefault(data.getRnd()));
-                        averageData.setSales(getValueOrDefault(averageData.getSales()) + getValueOrDefault(data.getSales()));
-                        averageData.setCapex(getValueOrDefault(averageData.getCapex()) + getValueOrDefault(data.getCapex()));
-                        averageData.setOpProfits(getValueOrDefault(averageData.getOpProfits()) + getValueOrDefault(data.getOpProfits()));
-                        averageData.setEmployees(getValueOrDefault(averageData.getEmployees()) + getValueOrDefault(data.getEmployees()));
-                        averageData.setMarketCap(getValueOrDefault(averageData.getMarketCap()) + getValueOrDefault(data.getMarketCap()));
-
-                    }
-                }
-
-                // Batazbestekoak kalkulatu
-                averageData.setRnd(averageData.getRnd() / companyCount);
-                averageData.setSales(averageData.getSales() / companyCount);
-                averageData.setCapex(averageData.getCapex() / companyCount);
-                averageData.setOpProfits(averageData.getOpProfits() / companyCount);
-                averageData.setEmployees(averageData.getEmployees() / companyCount);
-                averageData.setMarketCap(averageData.getMarketCap() / companyCount);
-
-                return averageData;
-
-            // sektorean ez badago enpresarik guztia 0 izango da.
-            } else {
-                averageData.setRnd(0.0);
-                averageData.setSales(0.0);
-                averageData.setCapex(0.0);
-                averageData.setOpProfits(0.0);
-                averageData.setEmployees(0);
-                averageData.setMarketCap(0.0);
-
-                return averageData;
-
-            }
-        } else {
-            throw new NoSuchElementException(sectorName + " sektorea ez da existitzen.");
-        }
-    }
-
-    // metodo honek null balioak daudenean 0.0 balioa ematen digu NullPointerException-a ekiditeko.
-    private double getValueOrDefault(Double value) {
+    // metodo honek null balioak daudenean 0.0 balioa ematen digu
+    // NullPointerException-a ekiditeko.
+    public double getValueOrDefault(Double value) {
         return value != null ? value : 0.0;
     }
 
-    // metodo honek null balioak daudenean 0 balioa ematen digu NullPointerException-a ekiditeko.
-    private int getValueOrDefault(Integer value) {
+    // metodo honek null balioak daudenean 0 balioa ematen digu
+    // NullPointerException-a ekiditeko.
+    public int getValueOrDefault(Integer value) {
         return value != null ? value : 0;
     }
 

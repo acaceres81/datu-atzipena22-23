@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="49cm" height="41cm" viewBox="44 124 970 816" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="45" y="256" width="512" height="315"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45" y="256" width="512" height="315"/>
+    <rect style="fill: #ffffff" x="45" y="236" width="42.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45" y="236" width="42.5" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="47" y="250">model</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="140" y="428" width="133.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140" y="428" width="133.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="206.6" y="448">Company</text>
+    <rect style="fill: #ffffff" x="140" y="456" width="133.2" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140" y="456" width="133.2" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="469.2">+id: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="485.2">+company: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="501.2">+courty: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="517.2">+region: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="533.2">+data: Data</text>
+    <rect style="fill: #ffffff" x="140" y="540" width="133.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140" y="540" width="133.2" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="351" y="283" width="194.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="351" y="283" width="194.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="448.4" y="303">Data</text>
+    <rect style="fill: #ffffff" x="351" y="311" width="194.8" height="244"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="351" y="311" width="194.8" height="244"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="324.2">+rnd: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="340.2">+rndGrowth: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="356.2">+sales: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="372.2">+salesGrowth: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="388.2">+rndIntensity: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="404.2">+capex: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="420.2">+capexGfrowth: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="436.2">+capexIntensity: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="452.2">+opProfits: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="468.2">+opProfitsGrowth: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="484.2">+profitability: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="500.2">+employees: Integer</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="516.2">+employeeGrowth: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="532.2">+marketCap: Double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354" y="548.2">+marketCapGrowth: Double</text>
+    <rect style="fill: #ffffff" x="351" y="555" width="194.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="351" y="555" width="194.8" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="85" y="312" width="217.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="85" y="312" width="217.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="193.95" y="332">Sector</text>
+    <rect style="fill: #ffffff" x="85" y="340" width="217.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="85" y="340" width="217.9" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="88" y="353.2">+_Id: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="88" y="369.2">+sector: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="88" y="385.2">+CompanyList: List&lt;Company&gt;</text>
+    <rect style="fill: #ffffff" x="85" y="392" width="217.9" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="85" y="392" width="217.9" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="332.764,513 304.1,513 304.1,514 273.2,514 "/>
+    <polygon style="fill: #ffffff" points="332.764,521 348.764,513 332.764,505 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="332.764,521 348.764,513 332.764,505 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="121.764,498 64,498 64,366 85,366 "/>
+    <polygon style="fill: #ffffff" points="121.764,506 137.764,498 121.764,490 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="121.764,506 137.764,498 121.764,490 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="45" y="125" width="264.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45" y="125" width="264.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="177.05" y="145">Main</text>
+    <rect style="fill: #ffffff" x="45" y="153" width="264.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45" y="153" width="264.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="48" y="166.2">+auker: int</text>
+    <rect style="fill: #ffffff" x="45" y="173" width="264.1" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45" y="173" width="264.1" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="48" y="186.2">+Main(String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="48" y="202.2">-runSpringBootApplication(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="48" y="218.2">-runConversor(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="339" y="127" width="255.25" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="339" y="127" width="255.25" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="466.625" y="147">ProjektupertsonalaApplication</text>
+    <rect style="fill: #ffffff" x="339" y="155" width="255.25" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="339" y="155" width="255.25" height="8"/>
+    <rect style="fill: #ffffff" x="339" y="163" width="255.25" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="339" y="163" width="255.25" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="342" y="176.2">+Main(String): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="620" y="281" width="388" height="99"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="620" y="281" width="388" height="99"/>
+    <rect style="fill: #ffffff" x="620" y="261" width="81" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="620" y="261" width="81" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="622" y="275">repository</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="628.8" y="295" width="364.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="628.8" y="295" width="364.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="810.9" y="315">SectorRepository</text>
+    <rect style="fill: #ffffff" x="628.8" y="323" width="364.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="628.8" y="323" width="364.2" height="8"/>
+    <rect style="fill: #ffffff" x="628.8" y="331" width="364.2" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="628.8" y="331" width="364.2" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="631.8" y="344.2">+findBySector(sector:String): Optional&lt;Sector&gt;</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="629" y="129" width="217.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="629" y="129" width="217.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="737.95" y="149">SpringConfiguration</text>
+    <rect style="fill: #ffffff" x="629" y="157" width="217.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="629" y="157" width="217.9" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="632" y="170.2">-connectionString: String</text>
+    <rect style="fill: #ffffff" x="629" y="177" width="217.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="629" y="177" width="217.9" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="632" y="190.2">+mongoClient(): MongoClient</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="619" y="431" width="214" height="130"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="619" y="431" width="214" height="130"/>
+    <rect style="fill: #ffffff" x="619" y="411" width="73.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="619" y="411" width="73.3" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="621" y="425">Conversor</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="641.1" y="440" width="171.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="641.1" y="440" width="171.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="726.95" y="460">CsvToSector</text>
+    <rect style="fill: #ffffff" x="641.1" y="468" width="171.7" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="641.1" y="468" width="171.7" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="644.1" y="481.2">-idCounter: int</text>
+    <rect style="fill: #ffffff" x="641.1" y="488" width="171.7" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="641.1" y="488" width="171.7" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="644.1" y="501.2">+main(String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="644.1" y="517.2">-generateId(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="47" y="604" width="472" height="330"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="47" y="604" width="472" height="330"/>
+    <rect style="fill: #ffffff" x="47" y="584" width="57.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="47" y="584" width="57.9" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="49" y="598">service</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="62.1" y="620" width="433.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="62.1" y="620" width="433.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="278.85" y="640">SectorService</text>
+    <rect style="fill: #ffffff" x="62.1" y="648" width="433.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="62.1" y="648" width="433.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="661.2">-sectorRepository: SectorRepository</text>
+    <rect style="fill: #ffffff" x="62.1" y="668" width="433.5" height="244"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="62.1" y="668" width="433.5" height="244"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="681.2">+getSectors(): List&lt;Sector&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="697.2">+getSectorById(id:String): Sector</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="713.2">+createCompany(sector:Sector): Sector</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="729.2">+getSectorByName(String:Sector): Sector</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="745.2">+deleteCompanyFromSector(companyName:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="761.2">+deleteAl(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="777.2">+updateSectorName(oldName:String,newName:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="793.2">+getAllCompanies(): List&lt;Company&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="809.2">+findCompaniesByCountry(country:String): List&lt;Company&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="825.2">+findRndDGreaterThan(rnd:double): List&lt;Company&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="841.2">+getSectorWithMostCompanies(): Sector</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="857.2">+getAverageDataSector(sectorName:String): Data</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="873.2">+orderCompanies(companies:List&lt;Company&gt;): List&lt;Company&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="889.2">+getValueOrDefault(value:Double): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65.1" y="905.2">+getValueOrDefault(value:Integer): int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="548.302" y="604.119" width="464.205" height="333.888"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="548.302" y="604.119" width="464.205" height="333.888"/>
+    <rect style="fill: #ffffff" x="548.302" y="584.119" width="81" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="548.302" y="584.119" width="81" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="550.302" y="598.119">controller</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="556.784" y="623.259" width="425.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="556.784" y="623.259" width="425.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="769.684" y="643.259">SectorController</text>
+    <rect style="fill: #ffffff" x="556.784" y="651.259" width="425.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="556.784" y="651.259" width="425.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="664.459">+sectorService: SectorService</text>
+    <rect style="fill: #ffffff" x="556.784" y="671.259" width="425.8" height="212"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="556.784" y="671.259" width="425.8" height="212"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="684.459">+getSectors(): List&lt;Sector&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="700.459">+getSectorById(id:String): Sector</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="716.459">+getSectorbySector(sector:String): Sector</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="732.459">+getAllCompanies(): List&lt;Company&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="748.459">+deleteAll(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="764.459">+deleteCompany(company:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="780.459">+adCompany(Sector:sector): Sector</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="796.459">+updateSectorName(oldName:String,newName:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="812.459">+getCompaniesByCountry(country:String): List&lt;Company&gt; </text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="828.459">+getCompaniesRndHigherThan(rnd:double): List&lt;Company&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="844.459">+getSectorWithMostCompanies(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="860.459">+getCompaniesPerSector(sector:String): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="559.784" y="876.459">+getAverageDataSector(sector:String): Data</text>
+  </g>
+</svg>

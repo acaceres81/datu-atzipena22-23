@@ -46,7 +46,7 @@ public class SectorController {
     // Sektore bat erakutsiko digu metodo honek
     @GetMapping("/{sector}")
     public Sector getSectorbySector(@PathVariable String sector) {
-        return sectorService.getSectorBySector(sector);
+        return sectorService.getSectorByName(sector);
     }
 
     // Enpresa guztiak erakutsiko ditu metodo honek
@@ -55,7 +55,7 @@ public class SectorController {
         return sectorService.getAllCompanies();
     }
 
-    // Indormazio guztia ezabatu
+    // Informazio guztia ezabatu
     @DeleteMapping()
     public void deleteAll() {
         sectorService.deleteAll();
@@ -68,10 +68,10 @@ public class SectorController {
     }
 
     // Enpresa berri bat gehituko du. Sektorea berria bada sektorea sortuko du.
-    // Sektorea ezisittzen bada, existitzen den sektorean sartuko du enpresa berria.
+    // Sektorea exisittzen bada, existitzen den sektorean sartuko du enpresa berria.
     @PostMapping("/company")
-    public Sector adSector(@RequestBody Sector sector) {
-        return sectorService.creaSector(sector);
+    public Sector adCompany(@RequestBody Sector sector) {
+        return sectorService.createCompany(sector);
     }
 
     // Sektore baten izena aldatu
@@ -87,7 +87,7 @@ public class SectorController {
 
     // erabiltzaileak sartutatko R&Da baino R&D handiagoa duten enpresak
     @GetMapping("/companiesWithRnDHigherThan/{rnd}")
-    public List<Company> getCompaniesByRnd(@PathVariable double rnd) {
+    public List<Company> getCompaniesRndHigherThan(@PathVariable double rnd) {
         return sectorService.findRndDGreaterThan(rnd);
     }
 
@@ -102,7 +102,7 @@ public class SectorController {
     // Sektore baten dauden enpresa kopurua ematen digu.
     @GetMapping("/numberCompaniesSector/{sector}")
     public int getCompaniesPerSector(@PathVariable String sector) {
-        Sector sectorObject = sectorService.getSectorBySector(sector);
+        Sector sectorObject = sectorService.getSectorByName(sector);
             
         return sectorObject.getCompanyList().size();
     }

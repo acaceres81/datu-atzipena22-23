@@ -37,7 +37,7 @@ public class CsvToSector {
                 * sektore horretan sartzeko eta sektorea ez bada existitzen, sektore berri bat sortzeko.
                 */
                 Sector sector = sectorMap.getOrDefault(sectorName, new Sector());
-                sector.set_Id(generateUniqueId());
+                sector.set_Id(generateId());
                 sector.setSector(sectorName);
 
 
@@ -130,7 +130,7 @@ public class CsvToSector {
     }
 
     // Ida eman sektore bakoitzari
-    private static String generateUniqueId() {
+    private static String generateId() {
         return "SECTOR_" + idCounter++; 
     }
 }
