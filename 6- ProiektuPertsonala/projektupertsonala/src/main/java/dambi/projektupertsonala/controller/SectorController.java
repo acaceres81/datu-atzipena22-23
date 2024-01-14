@@ -44,7 +44,7 @@ public class SectorController {
     }
 
     // Sektore bat erakutsiko digu metodo honek
-    @GetMapping("/{sector}")
+    @GetMapping("sector/{sector}")
     public Sector getSectorbySector(@PathVariable String sector) {
         return sectorService.getSectorByName(sector);
     }
